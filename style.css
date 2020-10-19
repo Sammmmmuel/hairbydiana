@@ -1,0 +1,360 @@
+body {
+    background-color: white;
+    padding: 0;
+    margin: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Home Page */
+
+.TitleBox {
+    font-family: copperplate;
+    padding: .5em;
+    margin: 1em;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.TitleBox>h2 {
+    color: black;
+    background-color: white;
+    padding: .5em;
+    /* box-shadow: 5px 5px; */
+    box-shadow: 0 0 22px black;
+}
+
+.TitleBox>h2>p {
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+.TitleBoxIMG {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#HomePage {
+    background-color: white;
+    height: 100vh;
+    background-image: url("ocean.jpg");
+    background-size: cover;
+    /* Parallax Effect */
+    background-attachment: fixed;
+}
+
+
+/* Booking */
+
+#BOOKING {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 100vh;
+}
+
+.BookingIMG {
+    width: 50%;
+    background-image: url("willie.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.BookingBox {
+    width: 50%;
+    padding: .5em;
+    margin: auto;
+    font-family: monospace;
+    color: white;
+    background-color: black;
+    /* box-shadow: 5px 5px; */
+    box-shadow: 0 0 22px black;
+    border-radius: 120px;
+    height: fit-content;
+    width: fit-content;
+}
+
+.BookingBox a:hover {
+    color: gray;
+}
+
+
+/* About Section */
+
+#About {
+    background-color: white;
+    display: flex;
+    color: black;
+    background-image: url("ocean.jpg");
+    background-size: cover;
+}
+
+#About>div {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+}
+
+#About h2 p {
+    margin: 0 0 1rem 0;
+}
+
+#About img {
+    width: 100%;
+    box-shadow: 0 0 22px black;
+}
+
+#About>div>div:nth-child(1) {
+    flex: 3;
+    margin: 0 2em 0 0;
+}
+
+#About>div>div:nth-child(2) {
+    flex: 2;
+}
+
+#About {
+    background-color: white;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+
+/* Navigation Bar */
+
+nav main>section {
+    overflow: auto;
+    box-shadow: 0px 10px 10px -10px black;
+}
+
+main>section,
+main>footer {
+    min-height: 100vh;
+    box-shadow: 0px 10px 10px -10px black;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 1em;
+    background-color: black;
+    color: #eee;
+    display: flex;
+    /* box-shadow: 0px 10px 10px -10px black; */
+}
+
+nav h1 ul {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-family: copperplate;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul a {
+    padding: 1em;
+    color: white;
+}
+
+nav ul a:hover {
+    color: gray;
+}
+
+
+/* Example Section */
+
+#Examples {
+    background-color: white;
+    height: 100vh;
+}
+
+.ExamplesText {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: .5em;
+    margin: 1em;
+}
+
+.ExamplesText>h2 {
+    color: black;
+    background-color: white;
+    padding: .5em;
+    box-shadow: 5px 5px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.grid-gallery {
+    column-gap: .7%;
+    display: grid;
+    grid-template-columns: 16.42% 12.35% 12.35% 12.5% 12.5% 12.35% 8.28% 8.28%;
+    /*230px 173px 173px 175px 175px 173px 116px 116px*/
+    grid-template-rows: 1fr .07fr .12fr .44fr .638fr;
+    grid-gap: 10px;
+    grid-column-gap: .7%;
+    left: 50%;
+    margin: 100px -50vw 0;
+    position: relative;
+    right: 50%;
+    width: 100vw;
+}
+
+.grid-gallery img {
+    border-radius: 4px;
+    height: auto;
+    width: 100%;
+}
+
+.grid-gallery img:nth-of-type(1) {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 3;
+}
+
+.grid-gallery img:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 4 / span 2;
+}
+
+.grid-gallery img:nth-of-type(3) {
+    grid-column: 2;
+    grid-row: 4 / span 2;
+}
+
+.grid-gallery img:nth-of-type(4) {
+    align-self: end;
+    grid-column: 3;
+    grid-row: 1 / span 5;
+}
+
+.grid-gallery img:nth-of-type(5) {
+    grid-column: 4 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.grid-gallery img:nth-of-type(6) {
+    grid-column: 4;
+    grid-row: 3 / span 2;
+}
+
+.grid-gallery img:nth-of-type(7) {
+    grid-column: 5;
+    grid-row: 3 / span 2;
+}
+
+.grid-gallery img:nth-of-type(8) {
+    grid-column: 4 / span 2;
+    grid-row: 5;
+}
+
+.grid-gallery img:nth-of-type(9) {
+    align-self: center;
+    grid-column: 6;
+    grid-row: 1 / span 5;
+}
+
+.grid-gallery img:nth-of-type(10) {
+    align-self: end;
+    grid-column: 7;
+    grid-row: 1;
+}
+
+.grid-gallery img:nth-of-type(11) {
+    align-self: end;
+    grid-column: 8;
+    grid-row: 1;
+}
+
+.grid-gallery img:nth-of-type(12) {
+    grid-column: 7 / span 2;
+    grid-row: 2 / span 4;
+}
+
+
+/* Services */
+
+#Services {
+    background-color: black;
+    height: 100vh;
+}
+
+.ServicesText {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.ServicesText>h2 {
+    color: gray;
+    background-color: white;
+    padding: .5em;
+    box-shadow: 5px 5px;
+    border-radius: 100px;
+}
+
+.ServicesSubText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+.ServicesSubText p {
+    text-align: center;
+    max-width: 150px;
+}
+
+
+/* Contact */
+
+#Contact {
+    margin: 1em;
+    padding: none;
+}
+
+.ContactLogos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+/* Extra */
+
+#Extra {
+    height: 25vh;
+    background-color: gray;
+}
+
+.ExtraText>h2 {
+    text-align: center;
+    padding: 1em;
+}
+
+.ExtraSubText p {
+    text-align: center;
+}
